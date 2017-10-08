@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		36237BD93512F3E449EBFFD0 /* Pods_SlakChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E17ACE52E396BBF69EC411 /* Pods_SlakChat.framework */; };
 		D106FB2E1F89B4A6001569EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FB2D1F89B4A6001569EC /* AppDelegate.swift */; };
-		D106FB301F89B4A6001569EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FB2F1F89B4A6001569EC /* ViewController.swift */; };
 		D106FB331F89B4A6001569EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D106FB311F89B4A6001569EC /* Main.storyboard */; };
 		D106FB351F89B4A6001569EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D106FB341F89B4A6001569EC /* Assets.xcassets */; };
 		D106FB381F89B4A6001569EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D106FB361F89B4A6001569EC /* LaunchScreen.storyboard */; };
+		D106FB471F89B792001569EC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FB461F89B792001569EC /* ChatVC.swift */; };
+		D106FB491F89B7A0001569EC /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FB481F89B7A0001569EC /* ChannelVC.swift */; };
+		D106FB4A1F89B98E001569EC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D106FB411F89B517001569EC /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,6 @@
 		BA44C9585B19761224CF3AA9 /* Pods-SlakChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlakChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlakChat/Pods-SlakChat.release.xcconfig"; sourceTree = "<group>"; };
 		D106FB2A1F89B4A6001569EC /* SlakChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlakChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D106FB2D1F89B4A6001569EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D106FB2F1F89B4A6001569EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D106FB321F89B4A6001569EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D106FB341F89B4A6001569EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D106FB371F89B4A6001569EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +30,8 @@
 		D106FB401F89B516001569EC /* SlakChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlakChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		D106FB411F89B517001569EC /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D106FB421F89B517001569EC /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		D106FB461F89B792001569EC /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		D106FB481F89B7A0001569EC /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +67,11 @@
 		D106FB2C1F89B4A6001569EC /* SlakChat */ = {
 			isa = PBXGroup;
 			children = (
+				D106FB431F89B727001569EC /* Model */,
+				D106FB441F89B72C001569EC /* View */,
+				D106FB451F89B732001569EC /* Controller */,
 				D106FB3F1F89B4FE001569EC /* Supporting Files */,
 				D106FB2D1F89B4A6001569EC /* AppDelegate.swift */,
-				D106FB2F1F89B4A6001569EC /* ViewController.swift */,
 				D106FB311F89B4A6001569EC /* Main.storyboard */,
 				D106FB341F89B4A6001569EC /* Assets.xcassets */,
 				D106FB361F89B4A6001569EC /* LaunchScreen.storyboard */,
@@ -83,6 +88,29 @@
 				D106FB401F89B516001569EC /* SlakChat-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D106FB431F89B727001569EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D106FB441F89B72C001569EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D106FB451F89B732001569EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D106FB461F89B792001569EC /* ChatVC.swift */,
+				D106FB481F89B7A0001569EC /* ChannelVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		E6D46712347CCE82FC4F6496 /* Pods */ = {
@@ -226,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D106FB301F89B4A6001569EC /* ViewController.swift in Sources */,
+				D106FB471F89B792001569EC /* ChatVC.swift in Sources */,
+				D106FB491F89B7A0001569EC /* ChannelVC.swift in Sources */,
 				D106FB2E1F89B4A6001569EC /* AppDelegate.swift in Sources */,
+				D106FB4A1F89B98E001569EC /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
