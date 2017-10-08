@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36237BD93512F3E449EBFFD0 /* Pods_SlakChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E17ACE52E396BBF69EC411 /* Pods_SlakChat.framework */; };
 		D106FB2E1F89B4A6001569EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FB2D1F89B4A6001569EC /* AppDelegate.swift */; };
 		D106FB301F89B4A6001569EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FB2F1F89B4A6001569EC /* ViewController.swift */; };
 		D106FB331F89B4A6001569EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D106FB311F89B4A6001569EC /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32906DA3B3017A6C6D3AE0AD /* Pods-SlakChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlakChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlakChat/Pods-SlakChat.debug.xcconfig"; sourceTree = "<group>"; };
+		98E17ACE52E396BBF69EC411 /* Pods_SlakChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlakChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA44C9585B19761224CF3AA9 /* Pods-SlakChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlakChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlakChat/Pods-SlakChat.release.xcconfig"; sourceTree = "<group>"; };
 		D106FB2A1F89B4A6001569EC /* SlakChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlakChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D106FB2D1F89B4A6001569EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D106FB2F1F89B4A6001569EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,9 @@
 		D106FB341F89B4A6001569EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D106FB371F89B4A6001569EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D106FB391F89B4A6001569EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D106FB401F89B516001569EC /* SlakChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlakChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		D106FB411F89B517001569EC /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D106FB421F89B517001569EC /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36237BD93512F3E449EBFFD0 /* Pods_SlakChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,8 @@
 			children = (
 				D106FB2C1F89B4A6001569EC /* SlakChat */,
 				D106FB2B1F89B4A6001569EC /* Products */,
+				E6D46712347CCE82FC4F6496 /* Pods */,
+				F30C601C3CF9083F82BE1264 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +64,7 @@
 		D106FB2C1F89B4A6001569EC /* SlakChat */ = {
 			isa = PBXGroup;
 			children = (
+				D106FB3F1F89B4FE001569EC /* Supporting Files */,
 				D106FB2D1F89B4A6001569EC /* AppDelegate.swift */,
 				D106FB2F1F89B4A6001569EC /* ViewController.swift */,
 				D106FB311F89B4A6001569EC /* Main.storyboard */,
@@ -64,6 +75,33 @@
 			path = SlakChat;
 			sourceTree = "<group>";
 		};
+		D106FB3F1F89B4FE001569EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D106FB421F89B517001569EC /* SWRevealViewController.h */,
+				D106FB411F89B517001569EC /* SWRevealViewController.m */,
+				D106FB401F89B516001569EC /* SlakChat-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6D46712347CCE82FC4F6496 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32906DA3B3017A6C6D3AE0AD /* Pods-SlakChat.debug.xcconfig */,
+				BA44C9585B19761224CF3AA9 /* Pods-SlakChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F30C601C3CF9083F82BE1264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98E17ACE52E396BBF69EC411 /* Pods_SlakChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D106FB3C1F89B4A6001569EC /* Build configuration list for PBXNativeTarget "SlakChat" */;
 			buildPhases = (
+				4336F921C1A253497E191E08 /* [CP] Check Pods Manifest.lock */,
 				D106FB261F89B4A6001569EC /* Sources */,
 				D106FB271F89B4A6001569EC /* Frameworks */,
 				D106FB281F89B4A6001569EC /* Resources */,
+				DCA42F191513A724C51587D4 /* [CP] Embed Pods Frameworks */,
+				231E7D3A7BBDBCE8BE4F1E11 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					D106FB291F89B4A6001569EC = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		231E7D3A7BBDBCE8BE4F1E11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlakChat/Pods-SlakChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4336F921C1A253497E191E08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCA42F191513A724C51587D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlakChat/Pods-SlakChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D106FB261F89B4A6001569EC /* Sources */ = {
@@ -272,14 +362,18 @@
 		};
 		D106FB3D1F89B4A6001569EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32906DA3B3017A6C6D3AE0AD /* Pods-SlakChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MD343B76Q;
 				INFOPLIST_FILE = SlakChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KevinVu.SlakChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlakChat/Supporting Files/SlakChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +381,17 @@
 		};
 		D106FB3E1F89B4A6001569EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA44C9585B19761224CF3AA9 /* Pods-SlakChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MD343B76Q;
 				INFOPLIST_FILE = SlakChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KevinVu.SlakChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SlakChat/Supporting Files/SlakChat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
