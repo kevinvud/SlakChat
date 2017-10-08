@@ -18,6 +18,7 @@
 		D106FB4C1F89BE9B001569EC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D106FB4B1F89BE9B001569EC /* GradientView.swift */; };
 		D1793D5B1F89C8570070A7C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1793D5A1F89C8570070A7C2 /* Constants.swift */; };
 		D1793D5D1F89CC4D0070A7C2 /* LoginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1793D5C1F89CC4D0070A7C2 /* LoginVCViewController.swift */; };
+		D1793D5F1F89FA3F0070A7C2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1793D5E1F89FA3F0070A7C2 /* CreateAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D106FB4B1F89BE9B001569EC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D1793D5A1F89C8570070A7C2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D1793D5C1F89CC4D0070A7C2 /* LoginVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewController.swift; sourceTree = "<group>"; };
+		D1793D5E1F89FA3F0070A7C2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				D106FB461F89B792001569EC /* ChatVC.swift */,
 				D106FB481F89B7A0001569EC /* ChannelVC.swift */,
 				D1793D5C1F89CC4D0070A7C2 /* LoginVCViewController.swift */,
+				D1793D5E1F89FA3F0070A7C2 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				D106FB471F89B792001569EC /* ChatVC.swift in Sources */,
 				D106FB491F89B7A0001569EC /* ChannelVC.swift in Sources */,
+				D1793D5F1F89FA3F0070A7C2 /* CreateAccountVC.swift in Sources */,
 				D106FB4C1F89BE9B001569EC /* GradientView.swift in Sources */,
 				D106FB2E1F89B4A6001569EC /* AppDelegate.swift in Sources */,
 				D106FB4A1F89B98E001569EC /* SWRevealViewController.m in Sources */,
