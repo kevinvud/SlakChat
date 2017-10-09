@@ -205,7 +205,7 @@
                                     <constraint firstAttribute="height" constant="50" id="JHX-fg-Q8y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -213,11 +213,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="bLY-mN-RRw" eventType="touchUpInside" id="9VY-jC-tvh"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Q9U-Oj-THj">
                                 <rect key="frame" x="82" y="160" width="250" height="86"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weG-o9-uf5">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="weG-o9-uf5">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="9qV-vV-d7I"/>
@@ -234,7 +237,7 @@
                                             <constraint firstAttribute="width" constant="250" id="ndI-4A-Ms9"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-We-AOS">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-We-AOS">
                                         <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="jk1-tp-OoC"/>
@@ -296,9 +299,14 @@
                                     <action selector="createAccountBtnPressed:" destination="bLY-mN-RRw" eventType="touchUpInside" id="WoZ-mU-WeP"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rj0-T7-k4P">
+                                <rect key="frame" x="189" y="249.66666666666669" width="37" height="37.000000000000057"/>
+                                <color key="color" red="0.32549019610000002" green="0.41960784309999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="rj0-T7-k4P" firstAttribute="centerY" secondItem="NmK-LI-0DK" secondAttribute="centerY" constant="-100" id="2TU-LZ-vBs"/>
                             <constraint firstItem="K78-m1-E6s" firstAttribute="top" secondItem="Q9U-Oj-THj" secondAttribute="bottom" constant="40" id="512-MU-Mlr"/>
                             <constraint firstItem="Yc5-7Z-yNu" firstAttribute="top" secondItem="9RX-qR-bI1" secondAttribute="top" constant="8" id="PCT-WV-UZy"/>
                             <constraint firstItem="Q9U-Oj-THj" firstAttribute="top" secondItem="emz-ft-HxZ" secondAttribute="bottom" constant="40" id="Pe0-L3-oWc"/>
@@ -306,6 +314,7 @@
                             <constraint firstItem="emz-ft-HxZ" firstAttribute="top" secondItem="9RX-qR-bI1" secondAttribute="top" constant="60" id="UBp-2B-SWc"/>
                             <constraint firstItem="wtL-hf-WsG" firstAttribute="trailing" secondItem="NmK-LI-0DK" secondAttribute="trailingMargin" id="VAu-2z-q3w"/>
                             <constraint firstItem="S5l-VA-R3V" firstAttribute="centerX" secondItem="NmK-LI-0DK" secondAttribute="centerX" id="WJJ-bk-KAD"/>
+                            <constraint firstItem="rj0-T7-k4P" firstAttribute="centerX" secondItem="NmK-LI-0DK" secondAttribute="centerX" id="aBI-nG-uY7"/>
                             <constraint firstItem="Yc5-7Z-yNu" firstAttribute="trailing" secondItem="NmK-LI-0DK" secondAttribute="trailingMargin" id="dVy-IU-Wwp"/>
                             <constraint firstItem="S5l-VA-R3V" firstAttribute="top" secondItem="K78-m1-E6s" secondAttribute="bottom" constant="5" id="grp-zl-ZdY"/>
                             <constraint firstItem="Q9U-Oj-THj" firstAttribute="centerX" secondItem="NmK-LI-0DK" secondAttribute="centerX" id="mzN-Tu-si6"/>
@@ -315,6 +324,9 @@
                         <viewLayoutGuide key="safeArea" id="9RX-qR-bI1"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="weG-o9-uf5" id="UuQ-zL-UEc"/>
+                        <outlet property="passwordTxt" destination="Byi-We-AOS" id="xgN-fs-aqe"/>
+                        <outlet property="spinner" destination="rj0-T7-k4P" id="B0X-m2-OcF"/>
                         <segue destination="SPI-yr-Ian" kind="show" identifier="toCreateAccount" id="XHs-gS-dlr"/>
                     </connections>
                 </viewController>
