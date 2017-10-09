@@ -37,6 +37,11 @@ class CreateAccountVC: UIViewController {
         AutheService.instance.registerUser(email: email, password: pass) { (success) in
             if success{
                 print("regustered user!")
+                AutheService.instance.loginUser(email: email, password: pass, completion: { (success) in
+                    if success{
+                        print("logged in user~", AutheService.instance.authToken)
+                    }
+                })
             }
         }
     }
@@ -46,4 +51,6 @@ class CreateAccountVC: UIViewController {
     
     @IBAction func pickBGColorPressed(_ sender: Any) {
     }
+    
+    
 }
