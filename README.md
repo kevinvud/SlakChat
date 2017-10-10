@@ -30,6 +30,7 @@
 <tr>
 <td> <img src="https://i.imgur.com/prteUPa.jpg"> </td>
 </tr>
+</table>
 
 ### Description
 
