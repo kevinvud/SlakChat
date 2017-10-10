@@ -32,7 +32,7 @@
 
 This is a chat app which is called SlakChat. This app allows user to communicate with each other.
 
-App Features:
+### App Features:
 
 * Pick profile picture and its background color
 * View profile information such as: name, email, avatar 
