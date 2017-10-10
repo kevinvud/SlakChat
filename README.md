@@ -4,7 +4,7 @@
 <div align="center">
 <br>
 
-<h3> Screenshots </h3> 
+<h2> Screenshots </h2> 
 ### Screenshots
 
 <table align="center" border="0">
