@@ -1,9 +1,5 @@
 <h1> SlakChat </h1> 
-<br>
 
-<div align="center">
-<br>
-/>
 ### Screenshots
 
 <table align="center" border="0">
