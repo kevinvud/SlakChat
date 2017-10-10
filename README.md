@@ -30,7 +30,7 @@
 
 ### Description
 
-This is a chat app which is called SlakChat. This app allows user to have live conversation with each other.
+This is a chat app which is called SlakChat. This app allows user to have a live conversation with each other.
 
 ### App Features:
 
