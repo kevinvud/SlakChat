@@ -115,7 +115,7 @@
                                 <rect key="frame" x="0.0" y="135" width="414" height="459"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="eTj-xA-udb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="channelCell" id="eTj-xA-udb" customClass="ChannelCell" customModule="SlakChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eTj-xA-udb" id="AZr-U0-gav">
@@ -135,6 +135,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="omw-kU-A3D" id="Hgl-Pc-OL3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -177,6 +180,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="RgZ-E1-bQu" id="03w-B3-Pdh"/>
+                        <outlet property="tableView" destination="MBY-Rd-0xp" id="M6W-UQ-YpX"/>
                         <outlet property="userImg" destination="tuE-Cu-DSI" id="3xb-Xr-HFD"/>
                         <segue destination="bLY-mN-RRw" kind="show" identifier="toLogin" id="qlV-u9-Crr"/>
                     </connections>
